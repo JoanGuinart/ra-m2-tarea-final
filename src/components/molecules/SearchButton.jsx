@@ -9,7 +9,7 @@ function SearchButton() {
      height='2.3rem'
      backgroundColor={colors.secondary}
     >
-      <Icon />
+      <Icon/>
     </Button>
   )
 }

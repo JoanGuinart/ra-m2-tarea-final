@@ -1,17 +1,18 @@
 import React from 'react'
 import StyledGrid from '../../styles/grid'
 import { CardHouse } from '../molecules'
-import DataJson from '../../DataJson'
+import Data from '../../DataJson'
 
 function Houses() {
   return (
     <StyledGrid>
-      {DataJson.map((item) => (
+      {Data.map((house, index) => (
         <CardHouse
-          key={item.id}
-          location={item.location}
-          price={item.price}
-          image={item.image}
+          // eslint-disable-next-line react/no-array-index-key
+          key={index}
+          location={house.location}
+          price={house.value}
+          image={house.picture}
         />
       ))}
     </StyledGrid>

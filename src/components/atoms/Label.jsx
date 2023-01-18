@@ -11,7 +11,7 @@ function Label({ children, htmlFor}) {
 }
 
 Label.propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     htmlFor: PropTypes.string
 }
 

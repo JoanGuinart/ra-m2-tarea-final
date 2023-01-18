@@ -10,8 +10,13 @@ const StyledButton = styled.button`
   border: hidden;
   border-radius: 0.3rem;
   font-size: 0.8rem;
+  margin-left: 3px;
   width: ${({ width }) => width || '4.5rem'};
   height: ${({ height }) => height || '1.5rem'};
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer
+  }
 `
 
 function Button({...props}) {

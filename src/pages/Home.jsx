@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Map, Button } from '../components/atoms'
 import { Body } from '../components/layout'
 import { Houses } from '../components/organisms'
+import { colors } from '../styles'
 import StyledGrid from '../styles/grid'
 
 const DivStyled = styled.div`
@@ -22,11 +23,9 @@ function Home() {
         justifyContent="center"
       >
         <Houses />
-        <Map gridColumn="1fr" width="50vw" height="92%">
-          Mapa
-        </Map>
+        <Map/>
       <DivStyled>
-        <Button width="100px" backgroundColor='blue'>
+        <Button width="100px" backgroundColor={colors.secondary}>
           Cargar más
         </Button>
       </DivStyled>
