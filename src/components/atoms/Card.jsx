@@ -10,16 +10,17 @@ const StyledCard = styled(StyledGrid)`
   margin-right: 1rem;
 `
 
-function Card({children}) {
+// Conviertelo en un styled, sin JSX. No es necesario que sea un componente
+function Card({ children }) {
   return (
     <StyledCard columns rows="auto">
-        {children}
+      {children}
     </StyledCard>
   )
 }
 
 Card.propTypes = {
-    children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Card

@@ -14,8 +14,10 @@ function SelectOptions({ id, cityOptions, propertyOptions }) {
 
   return (
     <>
+      {/* Debería de haber 1 label y 1 select, no 1 label y 2 select */}
       <Label htmlFor={id} />
       <Select id="propertyType" value={selection} onChange={handleChange}>
+        {/* Pasa las opciones como props al Select */}
         {propertyOptions.map((item) => (
           <option key={item.id} value={item.property}>
             {item.property}

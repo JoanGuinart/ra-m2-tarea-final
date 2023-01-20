@@ -9,6 +9,7 @@ function Houses() {
       {Data.map((house, index) => (
         <CardHouse
           // eslint-disable-next-line react/no-array-index-key
+          //   No uses index, dales un id fake mejor
           key={index}
           location={house.location}
           price={house.value}
