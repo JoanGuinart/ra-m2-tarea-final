@@ -5,11 +5,11 @@ import { Button, Icon } from '../atoms'
 function SearchButton() {
   return (
     <Button
-     width='2.3rem'
-     height='2.3rem'
-     backgroundColor={colors.secondary}
+      width="2.3rem" // importar desde dimensions, muy random el 2.3rem
+      height="2.3rem" // importar desde dimensions, muy random el 2.3rem
+      backgroundColor={colors.secondary}
     >
-      <Icon/>
+      <Icon />
     </Button>
   )
 }

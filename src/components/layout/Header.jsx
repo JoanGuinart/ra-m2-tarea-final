@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const HeaderStyled = styled.div`
   display: flex;
   align-items: center;
@@ -11,20 +10,23 @@ const HeaderStyled = styled.div`
 `
 
 const StyledLi = styled.li`
-display: inline;
-color: grey;
-padding: 1rem;
-&:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
+  display: inline;
+  color: grey;
+  padding: 1rem;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `
 
 function Header() {
   return (
     <HeaderStyled>
-      <div><strong>MIPISO.com</strong></div>
       <div>
+        <strong>MIPISO.com</strong>
+      </div>
+      <div>
+        {/* Crea un componente menu que puedas reusar. Pasandole un objeto con datos para url y nombre del link */}
         <ul>
           <StyledLi>Busca</StyledLi>
           <StyledLi>Datos</StyledLi>
