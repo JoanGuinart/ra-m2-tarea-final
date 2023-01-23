@@ -1,15 +1,16 @@
 import React from 'react'
-import { colors } from '../../styles'
+import { colors, dimensions } from '../../styles'
 import { Button, Icon } from '../atoms'
 
 function SearchButton() {
   return (
     <Button
-     width='2.3rem'
-     height='2.3rem'
-     backgroundColor={colors.secondary}
+      margin-top={dimensions.base}
+      width={dimensions.xxxl}
+      height={dimensions.xxxl}
+      backgroundColor={colors.secondary}
     >
-      <Icon/>
+      <Icon />
     </Button>
   )
 }

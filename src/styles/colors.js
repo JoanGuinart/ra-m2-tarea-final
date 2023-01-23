@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const colors = {
   main: '#FF0000',
   secondary: '#0088CC',

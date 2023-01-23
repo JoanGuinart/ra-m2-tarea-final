@@ -5,6 +5,7 @@ export const dimensions = {
   base: "16px",
   xl: "24px",
   xxl: "32px",
+  xxxl: "37px",
   font: {
     base: "16px",
     h1: "52px",

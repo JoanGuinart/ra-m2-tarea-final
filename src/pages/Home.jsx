@@ -23,12 +23,12 @@ function Home() {
         justifyContent="center"
       >
         <Houses />
-        <Map/>
-      <DivStyled>
-        <Button width="100px" backgroundColor={colors.secondary}>
-          Cargar más
-        </Button>
-      </DivStyled>
+        <Map />
+        <DivStyled>
+          <Button width="100px" backgroundColor={colors.secondary}>
+            Cargar más
+          </Button>
+        </DivStyled>
       </StyledGrid>
     </Body>
   )

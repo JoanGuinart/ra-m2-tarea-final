@@ -4,11 +4,11 @@ import StyledGrid from '../../styles/grid'
 import { SearchButton, SelectOptions } from '../molecules'
 
 const SubHeaderStyled = styled(StyledGrid)`
-display: flex;
-padding: 1rem;
-background-color: #e3f9f2;
-border-top: 0.1rem solid #c7f4e6;
-border-bottom: 0.1rem solid #c7f4e6;
+  display: block;
+  padding: 1rem;
+  background-color: #e3f9f2;
+  border-top: 0.1rem solid #c7f4e6;
+  border-bottom: 0.1rem solid #c7f4e6;
 `
 
 function SubHeader() {

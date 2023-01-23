@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Button, Card } from '../atoms'
+import { Button } from '../atoms'
+import StyledCard from '../atoms/Card'
 
 const StyledImage = styled.img`
   width: 100%;
+  object-fit: contain;
   border-radius: 0.3rem;
+  &:hover {
+    z-index: 1;
+  }
 `
 const StyledP = styled.p`
   font-size: 0.6rem;
@@ -24,14 +29,14 @@ const StyledFooterCard = styled.div`
 
 function CardHouse({ location, price, image }) {
   return (
-    <Card>
-      <StyledImage alt="imageOfHouse" src={image}/>
+    <StyledCard columns rows="auto">
+      <StyledImage alt="imageOfHouse" src={image} />
       <StyledP>{location}</StyledP>
       <StyledFooterCard>
         <h5>{price}</h5>
         <Button>Localizar</Button>
       </StyledFooterCard>
-    </Card>
+    </StyledCard>
   )
 }
 

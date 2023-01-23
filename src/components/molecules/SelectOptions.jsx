@@ -48,4 +48,5 @@ SelectOptions.propTypes = {
     }),
   ),
 }
+
 export default SelectOptions
